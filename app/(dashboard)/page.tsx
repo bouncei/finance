@@ -1,6 +1,16 @@
-import { useGetAccounts } from "@/features/accounts/use-get-accounts";
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
+import { UseNewAccount } from "@/features/accounts/hooks/use-new-account";
 import Image from "next/image";
 
 export default function Home() {
-  return <main>This is a protected route</main>;
+  const { isOpen, onOpen } = UseNewAccount();
+
+  return (
+    <main>
+      <Button onClick={onOpen}>Add new account</Button>
+    </main>
+  );
 }

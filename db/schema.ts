@@ -8,7 +8,7 @@ export const accounts = pgTable("accounts", {
     userId: text("user_id").notNull()
 })
 
-export const insertAccountSchema = createInsertSchema(accounts)
+export const insertAccountSchema = createInsertSchema(accounts) // for POST request
 
 // export const  transactions = pgTable("transactions", {
 //     id: text("id").primaryKey()
