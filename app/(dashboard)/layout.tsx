@@ -7,9 +7,9 @@ interface Props {
 
 const DashboardLayout = ({ children }: Props) => {
   return (
-    <main className="px-3 lg:px-14">
+    <main>
       <Header />
-      {children}
+      <div className="px-3 lg:px-14">{children}</div>
     </main>
   );
 };
