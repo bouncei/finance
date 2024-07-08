@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { useGetAccounts } from "@/features/accounts/api/use-get-accounts";
 import { UseNewAccount } from "@/features/accounts/hooks/use-new-account";
-import Image from "next/image";
 
 export default function Home() {
   const { isOpen, onOpen } = UseNewAccount();
